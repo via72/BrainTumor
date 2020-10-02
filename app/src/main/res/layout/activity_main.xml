@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/humanbrain"
     android:orientation="vertical"
     android:gravity="center_horizontal"
     tools:context=".MainActivity">
 
-    <TextView
+
+
+       <TextView
         android:id="@+id/textView5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,53 +21,11 @@
         android:textColor="#F44336"
         android:textSize="35sp" />
 
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="wrap_content"
-        android:layout_height="94dp"
-        tools:srcCompat="@drawable/brain" />
-
-    <Button
-        android:id="@+id/btnOpenCamera"
-        android:layout_width="250dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="32dp"
-        android:background="@drawable/custom_button"
-        android:text="OPEN CAMERA"
-        app:layout_constraintBottom_toTopOf="@+id/btnOpenPhotoGallery"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <Button
-        android:id="@+id/btnOpenPhotoGallery"
-        android:layout_width="250dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="32dp"
-        android:background="@drawable/custom_button"
-        android:text="OPEN PHOTOGALLERY"
-        app:layout_constraintBottom_toTopOf="@+id/imgTaken"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnOpenCamera" />
-
-    <ImageView
-        android:id="@+id/imgTaken"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnOpenPhotoGallery"
-        app:srcCompat="@drawable/ic_launcher_foreground" />
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Enter Patient ID"
+           android:inputType="number"/>
 
     <Button
         android:id="@+id/aboutUs"
@@ -71,12 +33,14 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:background="@drawable/custom_button"
-        android:text="ABOUT US"
+        android:text="SUBMIT"
         android:textColor="#E91E63"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgTaken" />
+
+
 
 </LinearLayout>
